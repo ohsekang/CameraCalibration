@@ -13,7 +13,7 @@
 리포지토리를 복제하고 main.py를 실행하여 간단한 예제 결과를 확인합니다.  
 opencv(>=3.4.2)**와 **numpy(>=1.19.2)**가 설치되어 있는지 확인합니다. 
 ```
-git clone https://github.com/dyfcalid/CameraCalibration.git
+git clone https://github.com/ohsekang/CameraCalibration.git
 cd ./CameraCalibration
 python main.py
 ```  
