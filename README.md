@@ -135,7 +135,7 @@ exCalib = ExCalibrator()                            # 외부 기준 캘리브레
 ## Surround Camera Bird Eye View  
 > 서라운드 카메라 조감도 스플라이스 생성  
   
-`surroundBEV.py`  [查看文档](./SurroundBirdEyeView/README.md/)    
+`surroundBEV.py`  [문서 보기](./SurroundBirdEyeView/README.md/)    
 앞, 뒤, 왼쪽, 오른쪽에서 4개의 **원시 카메라 이미지**를 입력해 **조감도**를 생성합니다.  
 직접 스티칭**과 **퓨전 스티칭**을 포함하며, **밝기 밸런스 및 화이트 밸런스**를 수행할 수 있습니다.   
   
