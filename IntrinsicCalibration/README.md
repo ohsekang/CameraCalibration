@@ -140,7 +140,7 @@ python intrinsicCalib.py -input image -mode manual -fw 1280 -fh 1024 -bw 7 -bh 6
 `-crop` 입력으로 이미지 중앙의 (fw, fh) 크기를 자르면 대체 설정으로만 사용되며 일반적으로 사용되지 않습니다.  
 `-resize` 입력을 (fw,fh) 크기로 강제 설정하면 카메라의 내부 파라미터가 변경되며, 이는 백업 설정일 뿐 일반적으로 사용되지 않습니다.  
   
-例：
+선례：
 ```
 python intrinsicCalib.py  -fw 1280 -fh 720 -bw 6 -bh 8 -num 10 -delay 15 -store True -subpix 3 
 ```    
@@ -201,7 +201,7 @@ python intrinsicCalib.py  -fw 1280 -fh 720 -bw 6 -bh 8 -num 10 -delay 15 -store 
 **캘리브레이션 프로세스** :
 - 카메라가 이미지를 캡처합니다(일정한 간격으로)
 - 체스판 모서리 찾기(cv2.findChessboardCorners), 모서리 좌표 가져오기
-- 코너 좌표의 서브픽셀 최적화(cv2.cornerSubPix)는 [서브픽셀 최적화의 원리]를 참조하세요.(https://xueyayang.github.io/pdf_posts/%E4%BA%9A%E5%83%8F%E7%B4%A0%E8%A7%92%E7%82%B9%E7%9A%84%E6%B1%82%E6%B3%95.pdf)
+- 코너 좌표의 서브픽셀 최적화(cv2.cornerSubPix)는 [서브픽셀 최적화의 원리]를 참조하세요. 
 - 예상 계산된 카메라 내부 기준(cv2.CALIB_USE_INTRINSIC_GUESS), [장정유 보정 방법 원리](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.558.1926&rep=rep1&type=pdf)
 - 캘리브레이션 결과(cv2.fisheye.calibrate)를 얻고 새로운 데이터를 기반으로 지속적으로 최적화합니다.
 - 카메라의 내부 기준 및 왜곡 벡터를 기반으로 매핑 행렬을 가져와 왜곡이 없는 변환 관계와 왜곡이 수정된 변환 관계를 계산합니다(cv2.fisheye.initUndistortRectifyMap).
