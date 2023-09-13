@@ -43,8 +43,8 @@ python intrinsicCalib.py -h
 | -mode      | str  | auto      | Image Select Mode: auto/manual                   | 자동/수동 모드 선택                 |
 | -fw        | int  | 1280      | Camera Frame Width                               | 카메라 해상도 프레임 폭                 |
 | -fh        | int  | 1024      | Camera Frame Height                              | 카메라 해상도 프레임 높이                |
-| -bw        | int  | 7         | Chess Board Width (corners number)               | 보드 너비. [안쪽 모서리 포인트]             |
-| -bh        | int  | 6         | Chess Board Height (corners number)              | 보드의 높이. [안쪽 모서리 점]             |
+| -bw        | int  | 7         | Chess Board Width (corners number)               | 보드 너비. [안쪽 모서리 번호(수)]             |
+| -bh        | int  | 6         | Chess Board Height (corners number)              | 보드의 높이. [안쪽 모서리 번호(수)]             |
 | -size      | int  | 10        | Chess Board Square Size (mm)                     | 보드 그리드 측면의 길이 mm                     |
 | -num       | int  | 5         | Least Required Calibration Frame Number          | 보정된 사진 샘플의 최소 개수를 초기화합니다.        |
 | -delay     | int  | 8         | Capture Image Time Interval (frame number)       | 샘플 사이의 프레임 수                  |
