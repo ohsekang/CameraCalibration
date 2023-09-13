@@ -33,7 +33,7 @@ python intrinsicCalib.py -h
 ```
 
 | Argument   | Type | Default   | Help                                             | 참고                             |
-|:------------|:----:|:---------:|:-------------------------------------------------|:---------------------------------|
+|:-----------|:----:|:---------:|:-------------------------------------------------|:---------------------------------|
 | -input     | str  | camera    | Input Source: camera/video/image                 | 입력 형식 카메라/비디오/이미지           |
 | -type      | str  | fisheye   | Camera Type: fisheye/normal                      | 카메라 유형 어안/일반                |
 | -id        | int  | 1         | Camera ID                                        | 카메라 번호                          |
@@ -53,7 +53,7 @@ python intrinsicCalib.py -h
 | -fs        | float| 0.5       | Camera Undistort Focal Scale                     | 디에버레이션을 위한 초점 거리 스케일링 계수            |
 | -ss        | float| 1         | Camera Undistort Size Scale                      | 왜곡 제거를 위한 크기 스케일링 계수            |
 | -store     | bool | False     | Store Captured Images (Ture/False)               | 캡처한 이미지 저장 여부                |
-| -store_path| str  | ./data/   | Path to Store Captured Images                    | 캡처한 이미지를 저장할 경로              |
+| -store_path | str  | ./data/   | Path to Store Captured Images                    | 캡처한 이미지를 저장할 경로              |
 | -crop      | bool | False     | Crop Input Video/Image to (fw,fh) (Ture/False)   | 입력 비디오/이미지 크기를 fw fh로 자를지 여부 |
 | -resize    | bool | False     | Resize Input Video/Image to (fw,fh) (Ture/False) | 입력 비디오/이미지 크기를 fw fh로 확대할지 여부 |
    
