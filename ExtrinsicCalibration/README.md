@@ -50,7 +50,7 @@ python extrinsicCalib.py -h
 | -bw        | int  | 7         | Chess Board Width (corners number)                | 보드 그리드 너비(안쪽 모서리의 포인트 수) |
 | -bh        | int  | 6         | Chess Board Height (corners number)               | 보드 그리드의 높이(안쪽 모서리의 포인트 수) |
 | -src       | str  | img_src   | Source Image File Name Prefix (eg.: img_src)      | 소스 이미지 파일명 접두사 |
-| -dst       | str  | img_dst   | Destionation Image File Name Prefix (eg.: img_dst)| 타겟 이미지 파일 이름 접두사 |
+| -dst       | str  | img_dst   | Destination Image File Name Prefix (eg.: img_dst)| 타겟 이미지 파일 이름 접두사 |
 | -size      | int  | 10        | Scaled Chess Board Square Size (image pixel)      | 스케일링된 보드의 각 셀 가장자리 길이가 차지하는 다이어그램의 픽셀 크기 |
 | -subpix_s  | int  | 3         | Corners Subpix Region of img_src                  | 소스 이미지 하위 픽셀 최적화를 위한 검색 픽셀 범위 |
 | -subpix_d  | int  | 3         | Corners Subpix Region of img_dst                  | 대상 이미지의 서브픽셀 최적화를 위한 검색 픽셀 범위 |
