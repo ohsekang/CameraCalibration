@@ -18,13 +18,13 @@ def my_mean(base_i):
 def align_time(time_dict, thresh, init=True, info_list=None):
     """
     :param time_dict: {"cam1":[t1,t2,..],"cam2":[t7,t6]...}
-    :param thresh: 对齐的时间阈值
-    :param init: 如果为True，直接根据time_dict对齐，否则将根据info_list中的数据作为基础，将time_dict与其中进行对齐
+    :param thresh: 정렬 시간 임계값
+    :param init: True이면 time_dict를 기준으로 직접 정렬되고, 그렇지 않으면 info_list의 데이터를 기반으로 하고 time_dict가 이에 맞춰 정렬됩니다.
     :param info_list: [base_time_stamp, cams] base_time_stamp = [[t1,t3 ...],[t3,t6...],[t3,t8...],[t0,t9 ...]]
-    已经对齐的一部分数据
-    cams ["leftback","rightback",...] base_time_stamp中的数据来源
+    정렬된 데이터의 일부
+    cams ["leftback","rightback",...] base_time_stamp의 데이터 소스
 
-    :return: base_time_stamp 和 cams
+    :return: base_time_stamp와 cams
     """
     def init_base(time_dict):
         init_camera = str()
@@ -94,7 +94,7 @@ def main():
     print(len(res))
     print(base)
     # print(res)
-    # 之后可以按照res列表的内容按顺序读取图片
+    # 이후, res 목록의 내용에 따라 그림을 순서대로 읽을 수 있습니다.
 
 if __name__ == '__main__':
     main()
